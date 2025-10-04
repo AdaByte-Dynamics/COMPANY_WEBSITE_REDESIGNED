@@ -28,7 +28,7 @@
 
         <!-- Navigation -->
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -395,11 +395,11 @@
                         </div>
 
                         <div class="stats__container_item">
-                            <span>Projects Completed</span>
+                            <span>Happy Partners</span>
 
                             <h2> + 10</h2>
 
-                            <span>* Enterprise Applications * </span>
+                            <span>* And Counting * </span>
                         </div>
                     </div>
                 </div>
@@ -928,7 +928,7 @@
 
                 <div class="about_us__text">
                     <div class="client_image_container">
-                        <img src="./img/03.jpg" alt="user image" width="50" height="50px">
+                        <img src="./img/logo.png" alt="user image" width="50" height="50px">
                         <span>CEO @ Primebond Micro-credit Enterprice </span>
                     </div>
 
@@ -1236,7 +1236,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div>
@@ -1264,7 +1264,7 @@
 
     <!-- Bottom -->
     <div class="footer-bottom">
-        <small>© 2023 Maxwell Inc. All rights reserved.</small>
+        <small>© 2025 Adabyte Dynamics. All rights reserved.</small>
         <ul>
             <li><a href="#">Terms of Service</a></li>
             <li><a href="#">Privacy Policy</a></li>
@@ -1278,6 +1278,20 @@
     document.querySelector('.hamburger').addEventListener('click', function () {
         document.querySelector('.nav-links').classList.toggle('active');
     });
+
+    // Get all navigation links
+const navLinks = document.querySelectorAll('.nav-links a');
+
+// Add click event to each link
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        // Remove active class from all links
+        navLinks.forEach(l => l.classList.remove('active'));
+        
+        // Add active class to clicked link
+        this.classList.add('active');
+    });
+});
 </script>
 </body>
 </html>

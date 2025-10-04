@@ -292,6 +292,12 @@ body {
 
 .navbar ul li a:hover {
     color: var(--neutral--black);
+    border-bottom: 1px solid black;
+}
+
+.navbar ul li a.active {
+    color: var(--neutral--black);
+    border-bottom: 1px solid black; 
 }
 
 .contactus {
@@ -1464,10 +1470,10 @@ details.faq-item .content {
 
 
 .contact-us-hero__content .contact-hero-title {
-    color: var(--neutral--dark);
+    color: #3d3d3d;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 72px;
+    font-size: 57px;
     font-weight: 600;
     line-height: 1.2;
     text-transform: capitalize;
@@ -2088,6 +2094,36 @@ footer {
 
     .content__container {
         flex-direction: column;
+    }
+
+    .contact-hero-text_left{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-us-hero__content .contact-hero-title {
+        font-size: 48px;
+    }
+
+    .contact-hero-text_left .section-tag{
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact_hero-image{
+        margin-top: 20px;
+        display: none;
+    }
+
+    .contact-hero-text_left .hero-text{
+        font-size: medium;
+        line-height: 20px;
+    }
+
+    .contact_us_hero__container .cards{
+        gap: 5rem;
     }
 }
 
